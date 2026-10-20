@@ -2,9 +2,6 @@
   <img src="./MathForgeBanner.png" alt="MathForge — Automated Mathematical Research" width="100%" />
 </p>
 
-<div align="center">
-  <img src="./MathForgeLOGO.png" alt="MathForge logo" width="88" />
-
   # MathForge
 
   **Forge mathematical ideas. Verify the evidence.**
