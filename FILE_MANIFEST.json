@@ -1,0 +1,291 @@
+{
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 924,
+      "sha256": "b64ff26f8501abb79ebddc8131d335d4f32c2887676b0d25e1d3bdd76375c3c6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 82,
+      "sha256": "3129b829ffd9624739fa88ca5f988a347c81ef278bf1f8b1f4274e2e6d99ad79"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 748,
+      "sha256": "684a26ac54a78ea8368fd04ce2e69e8b1ed0cb7a0f2a689a97d36a9481af5b52"
+    },
+    {
+      "path": "atlas/atlas.jsonl",
+      "bytes": 3352,
+      "sha256": "4cc90c77204ad9dff41cf74fa0afe046495c91ae6e633c2c5836c5edcda7a712"
+    },
+    {
+      "path": "atlas/fields/taxonomy.json",
+      "bytes": 172,
+      "sha256": "30cef7aa1e5139ef16597b208afb6341a9898cf22d479773a6296aba10e53c50"
+    },
+    {
+      "path": "DEPENDENCY_INVENTORY.json",
+      "bytes": 2771,
+      "sha256": "682d91834b3daeb074d913a38cc94f76cd3e91c0dcb734e4fd18e6440d54fe27"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1240,
+      "sha256": "2eb28054bfe74fc2b6604f8ad3dec762fa82fb48a61b98f900bc5acae6acf4d4"
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "bytes": 2170,
+      "sha256": "bbe2c6d5aa807f1d3e1c69a04a44952497aff45ee76b7e3ab60f760dd7d9dcdd"
+    },
+    {
+      "path": "examples/block-demo.json",
+      "bytes": 180,
+      "sha256": "6c131e08bcbdbbaddb17a294fbc763a0f77980310d633856a39cabab1d0a77f0"
+    },
+    {
+      "path": "knowledge/definitions/catalog.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "knowledge/sources/catalog.json",
+      "bytes": 617,
+      "sha256": "8c5cd4890cdcb3e0c5e78e4d2fd29bec0321771c77b593d91ad0369676c7e94b"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 341,
+      "sha256": "86eefa53f02fb80883b85446c84c053798fc66e39d18765c3b2cab2eaf9d08a0"
+    },
+    {
+      "path": "LICENSE_CANDIDATE.md",
+      "bytes": 1138,
+      "sha256": "42a1d9fad48ffb71eb4f89597a9b22b32528efa462b21daf0683f39c03417eb2"
+    },
+    {
+      "path": "negative_knowledge/do_not_replay/NEG-DEMO-PHASE0.json",
+      "bytes": 742,
+      "sha256": "3ff49bc9356f56fb982a3e9f778ebf9a710805b6c89a2fdc6020145160a8b429"
+    },
+    {
+      "path": "OPEN_SOURCE_READINESS.md",
+      "bytes": 743,
+      "sha256": "da4402bb0493670c6d38f131f87790f6aeeb1cc2fafe7350c6f8b921b5e95f1e"
+    },
+    {
+      "path": "orchestration/policy.json",
+      "bytes": 390,
+      "sha256": "9379b40931b6da5376dc651b5dfbd7b3fdb08d85ffd21e71546ee5e7405675da"
+    },
+    {
+      "path": "orchestration/transitions.json",
+      "bytes": 1713,
+      "sha256": "cf4383e6f885b72394d66aca69e8765e19e9f507c212227956f25898593688a0"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 633,
+      "sha256": "afddfab9b81f3676eb0ca7d917438ee464e93fb497771482c78b444ac0588107"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2340,
+      "sha256": "3f23126032db40cb70fe584e6900bdea3804a647aaa070dc243f996dc3da8ee5"
+    },
+    {
+      "path": "requirements-build.lock",
+      "bytes": 286,
+      "sha256": "f2bdf7f03cb70d6d3e19e60a2a834ce73dd3ddb662d8452e4692d2db59220a8a"
+    },
+    {
+      "path": "requirements.lock",
+      "bytes": 600,
+      "sha256": "7baaa19705253702accb5212c041e2b46bc9d9d38ab320d01f13f96da88545fe"
+    },
+    {
+      "path": "research/candidates/shortlist.json",
+      "bytes": 4,
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+    },
+    {
+      "path": "RESEARCH_STATE.md",
+      "bytes": 2448,
+      "sha256": "54caa6fe0f277fe4d9db73b872d43afea8d7cad92a58cb204096c89bb4d75124"
+    },
+    {
+      "path": "schemas/candidate.schema.json",
+      "bytes": 1416,
+      "sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd"
+    },
+    {
+      "path": "schemas/conjecture.schema.json",
+      "bytes": 2243,
+      "sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad"
+    },
+    {
+      "path": "schemas/event.schema.json",
+      "bytes": 2692,
+      "sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b"
+    },
+    {
+      "path": "schemas/field.schema.json",
+      "bytes": 756,
+      "sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6"
+    },
+    {
+      "path": "schemas/negative.schema.json",
+      "bytes": 10375,
+      "sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f"
+    },
+    {
+      "path": "schemas/problem.schema.json",
+      "bytes": 27833,
+      "sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf"
+    },
+    {
+      "path": "schemas/source.schema.json",
+      "bytes": 2608,
+      "sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5"
+    },
+    {
+      "path": "schemas/theorem.schema.json",
+      "bytes": 2745,
+      "sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39"
+    },
+    {
+      "path": "SCIENTIFIC_CONTRACT.md",
+      "bytes": 2561,
+      "sha256": "d7b07fac4f386d2a09685c8b72ce446b58c043a501635d711b32c2dee5366b8c"
+    },
+    {
+      "path": "scripts/check_public_tree.py",
+      "bytes": 1637,
+      "sha256": "4fbc9b1fb9f824496522310d2afa66b59d92560184ee3643894a26a2283a1527"
+    },
+    {
+      "path": "scripts/mathforge.py",
+      "bytes": 288,
+      "sha256": "f2595a6e16e948f109187fb2673df3f37725cdc59b164ddda4eaa593e83f71f9"
+    },
+    {
+      "path": "src/mathforge/__init__.py",
+      "bytes": 110,
+      "sha256": "0119acf1f5c08f72480dbbbb786a4ea061a37141c1d91c5dfed6840b5a585220"
+    },
+    {
+      "path": "src/mathforge/__main__.py",
+      "bytes": 47,
+      "sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4"
+    },
+    {
+      "path": "src/mathforge/assets/Inspector.lean.in",
+      "bytes": 953,
+      "sha256": "b57cd7cd9c984ab85c5230e3d14835e4639b5978245d6c766c3aabbe589f551a"
+    },
+    {
+      "path": "src/mathforge/assets/policy.json",
+      "bytes": 370,
+      "sha256": "c27583acc2346e033b90f224ba16241cb14b0c0449c51d6524857f8aba1f6802"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/candidate.schema.json",
+      "bytes": 1416,
+      "sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/conjecture.schema.json",
+      "bytes": 2243,
+      "sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/event.schema.json",
+      "bytes": 2692,
+      "sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/field.schema.json",
+      "bytes": 756,
+      "sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/negative.schema.json",
+      "bytes": 10375,
+      "sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/problem.schema.json",
+      "bytes": 27833,
+      "sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/source.schema.json",
+      "bytes": 2608,
+      "sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5"
+    },
+    {
+      "path": "src/mathforge/assets/schemas/theorem.schema.json",
+      "bytes": 2745,
+      "sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39"
+    },
+    {
+      "path": "src/mathforge/assets/synthetic_seed.json",
+      "bytes": 9111,
+      "sha256": "38d1e0221e4aa2fced3c1923b7ac94f8c8c8c7559b14b5360595dcc3b45b6b8a"
+    },
+    {
+      "path": "src/mathforge/assets/transitions.json",
+      "bytes": 1620,
+      "sha256": "52cb3b373e9d96508e9cf8e5a752145e617a3145ca88794d6650fc0510dfaeea"
+    },
+    {
+      "path": "src/mathforge/certificates.py",
+      "bytes": 5736,
+      "sha256": "4401f149b3b72f2e02e0346c41dfde1d2fe6d4eb6f13c9526f1fbccff6fcee5a"
+    },
+    {
+      "path": "src/mathforge/cli.py",
+      "bytes": 3823,
+      "sha256": "8a87385cd01d93efe330fc9d5f6af90c4219c74796abe76b4c3a80ee69e76289"
+    },
+    {
+      "path": "src/mathforge/engine.py",
+      "bytes": 15985,
+      "sha256": "1620400b5f128350b2763e0136d88efbc2c1d16ae7b2c3d3f2f53fac8cc20394"
+    },
+    {
+      "path": "src/mathforge/lean.py",
+      "bytes": 6487,
+      "sha256": "8404126cd9600f7f03bc6652bb9150f0dc342abe4e773c65e6115b41fe4167fc"
+    },
+    {
+      "path": "src/mathforge/queue.py",
+      "bytes": 6822,
+      "sha256": "102905e05499eb46d27706a9702258fb9b4c096fb20f10dd770b184818d82fdc"
+    },
+    {
+      "path": "src/mathforge/windows_budget.py",
+      "bytes": 3230,
+      "sha256": "312f5e4f0c5ba40e7a17f28395b78183518ec187cadbae2dacdbd405f29d53aa"
+    },
+    {
+      "path": "src/mathforge/workspace.py",
+      "bytes": 913,
+      "sha256": "96534861dd6c246bed10b2cbbc132cb3498616a4b66c427deff57bd121286cf0"
+    },
+    {
+      "path": "tests/test_framework.py",
+      "bytes": 9661,
+      "sha256": "422774858f72b02f118a4923bb7f022c3c12d286fe28269b6b176abc7e199b15"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1020,
+      "sha256": "72169cd53342b74e14f5fb5677010ee9de437bc1fb47cdd7846d3746fc087764"
+    }
+  ],
+  "self_entry_excluded": true,
+  "state": "LOCAL_REVIEW_ONLY_NOT_AUTHORIZED_FOR_PUBLIC_DISTRIBUTION"
+}

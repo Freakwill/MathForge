@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "field_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z_]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "related_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "field_id",
+    "name",
+    "parents",
+    "related_fields",
+    "scope"
+  ],
+  "additionalProperties": false
+}

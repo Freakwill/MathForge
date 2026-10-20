@@ -1,0 +1,6 @@
+PRIVATE LOCAL CANDIDATE — LICENSE NOT YET GRANTED
+
+The intended license is Apache License 2.0, subject to confirmation of all
+applicable copyright, employment, institutional and contributor rights and an
+explicit adoption by the authorized rights holder. This file is not a grant
+of public redistribution rights. See LICENSE_CANDIDATE.md.

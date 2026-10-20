@@ -1,0 +1,331 @@
+{
+  "atlas/atlas.jsonl": [
+    {
+      "schema_version": "1.0",
+      "problem_id": "MF-0000",
+      "name": "Synthetic workflow fixture",
+      "aliases": [],
+      "field": [
+        "demo"
+      ],
+      "subfields": [],
+      "keywords": [],
+      "canonical_statement": "Synthetic record for infrastructure validation; no mathematical claim.",
+      "informal_statement": "Not a research target, theorem or open-problem assertion.",
+      "equivalent_formulations": [],
+      "record_kind": "calibration_question",
+      "audit": {
+        "statement": "unverified",
+        "open_status": "unverified",
+        "literature": "needs_literature_audit",
+        "novelty": "unknown"
+      },
+      "status": {
+        "value": "OPEN_STATUS_UNVERIFIED",
+        "last_verified": null,
+        "confidence": "unknown",
+        "evidence": []
+      },
+      "origin": {
+        "first_known_source": null,
+        "approximate_year": null,
+        "note": "New synthetic fixture; no original research data."
+      },
+      "sources": {
+        "primary": [],
+        "surveys": [],
+        "modern": []
+      },
+      "known_results": [],
+      "partial_results": [],
+      "special_cases": [],
+      "known_counterexamples": [],
+      "known_barriers": [],
+      "dependency_graph": {
+        "prerequisites": [],
+        "related_problems": [],
+        "stronger_questions": [],
+        "weaker_questions": [],
+        "equivalent_questions": []
+      },
+      "formalization": {
+        "lean_available": "unknown",
+        "mathlib_coverage": "unknown",
+        "existing_formalization": [],
+        "missing_components": []
+      },
+      "computational_structure": {
+        "finite_search_possible": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "exact_oracle_possible": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "symbolic_computation_possible": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "numerical_experiment_possible": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "synthetic_data_possible": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        }
+      },
+      "machine_tractability": {
+        "statement_clarity": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "verification_cost": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "counterexample_searchability": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "decomposition_quality": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "formalization_cost": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "literature_density": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "compute_cost": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "human_dependency": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "dependency_depth": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "example_availability": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "geometric_intuition": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "new_definitions": {
+          "assessment": "unknown",
+          "rationale": "SYNTHETIC_ONLY"
+        },
+        "overall_notes": "SYNTHETIC_ONLY"
+      },
+      "research_state": "OPEN_STATUS_UNVERIFIED",
+      "research_history": [
+        {
+          "from": "UNMAPPED",
+          "to": "MAPPED",
+          "at": "2000-01-01T00:00:00+00:00",
+          "actor": "cartographer",
+          "reason": "Synthetic fixture only.",
+          "evidence": []
+        },
+        {
+          "from": "MAPPED",
+          "to": "OPEN_STATUS_UNVERIFIED",
+          "at": "2000-01-01T00:00:00+00:00",
+          "actor": "cartographer",
+          "reason": "Synthetic fixture only.",
+          "evidence": []
+        }
+      ],
+      "negative_knowledge_links": [
+        "NEG-DEMO-PHASE0"
+      ],
+      "provenance": {
+        "actor": "synthetic-fixture",
+        "recorded_at": "2000-01-01T00:00:00+00:00",
+        "method": "New generated public demonstration instance.",
+        "limitations": "No scientific result or openness evidence."
+      }
+    }
+  ],
+  "atlas/fields/taxonomy.json": [
+    {
+      "field_id": "demo",
+      "name": "Synthetic infrastructure",
+      "parents": [],
+      "related_fields": [],
+      "scope": "Synthetic validation only."
+    }
+  ],
+  "knowledge/sources/catalog.json": [
+    {
+      "source_id": "SRC-DEMO",
+      "title": "Synthetic source metadata fixture",
+      "authors": [
+        "Synthetic fixture"
+      ],
+      "url": "https://example.invalid/fixture",
+      "kind": "unsourced",
+      "access": "unavailable",
+      "retrieved_on": "2000-01-01",
+      "publication_year": null,
+      "version": null,
+      "provenance": {
+        "actor": "synthetic-fixture",
+        "recorded_at": "2000-01-01T00:00:00+00:00",
+        "method": "New generated public demonstration instance.",
+        "limitations": "No scientific result or openness evidence."
+      },
+      "status_bindings": {}
+    }
+  ],
+  "knowledge/definitions/catalog.json": [],
+  "research/candidates/shortlist.json": [],
+  "negative_knowledge/do_not_replay/NEG-DEMO-PHASE0.json": {
+    "negative_id": "NEG-DEMO-PHASE0",
+    "kind": "replay_prohibition",
+    "problem_ids": [
+      "MF-0000"
+    ],
+    "scope": "Synthetic example; execution is disabled.",
+    "reason": "Infrastructure-only demo.",
+    "evidence": [],
+    "provenance": {
+      "actor": "synthetic-fixture",
+      "recorded_at": "2000-01-01T00:00:00+00:00",
+      "method": "New generated public demonstration instance.",
+      "limitations": "No scientific result or openness evidence."
+    },
+    "supersedes": null,
+    "details": {
+      "blocked_actions": [
+        "research execution",
+        "proof acceptance"
+      ],
+      "release_condition": "A separately reviewed future protocol; never an automatic release.",
+      "mathematical_failure_claim": false
+    }
+  },
+  "orchestration/policy.json": {
+    "phase": 0,
+    "enabled_roles": [
+      "cartographer",
+      "literature",
+      "critic",
+      "verifier"
+    ],
+    "allowed_targets": [
+      "MAPPED",
+      "OPEN_STATUS_UNVERIFIED",
+      "VERIFIED_OPEN",
+      "COLLISION_FOUND",
+      "BLOCKED",
+      "ABANDONED"
+    ],
+    "open_evidence_max_age_days": 180,
+    "research_execution_enabled": false,
+    "proof_acceptance_enabled": false
+  },
+  "orchestration/transitions.json": {
+    "UNMAPPED": [
+      "MAPPED"
+    ],
+    "MAPPED": [
+      "OPEN_STATUS_UNVERIFIED",
+      "COLLISION_FOUND",
+      "BLOCKED"
+    ],
+    "OPEN_STATUS_UNVERIFIED": [
+      "VERIFIED_OPEN",
+      "PARTIALLY_SOLVED",
+      "COLLISION_FOUND",
+      "BLOCKED",
+      "ABANDONED"
+    ],
+    "VERIFIED_OPEN": [
+      "DECOMPOSED",
+      "OPEN_STATUS_UNVERIFIED",
+      "COLLISION_FOUND",
+      "BLOCKED"
+    ],
+    "PARTIALLY_SOLVED": [
+      "DECOMPOSED",
+      "OPEN_STATUS_UNVERIFIED",
+      "COLLISION_FOUND",
+      "BLOCKED"
+    ],
+    "DECOMPOSED": [
+      "TARGETABLE",
+      "BLOCKED",
+      "COLLISION_FOUND",
+      "OPEN_STATUS_UNVERIFIED"
+    ],
+    "TARGETABLE": [
+      "SENTINEL_READY",
+      "BLOCKED",
+      "COLLISION_FOUND",
+      "OPEN_STATUS_UNVERIFIED"
+    ],
+    "SENTINEL_READY": [
+      "SENTINEL_RUNNING",
+      "BLOCKED",
+      "OPEN_STATUS_UNVERIFIED"
+    ],
+    "SENTINEL_RUNNING": [
+      "FALSIFIED",
+      "PROOF_ATTEMPT",
+      "PARTIAL_PROGRESS",
+      "BLOCKED"
+    ],
+    "PROOF_ATTEMPT": [
+      "FORMALIZATION",
+      "PARTIAL_PROGRESS",
+      "VERIFICATION_FAILED",
+      "BLOCKED",
+      "COLLISION_FOUND"
+    ],
+    "FORMALIZATION": [
+      "PROVED",
+      "VERIFICATION_FAILED",
+      "BLOCKED"
+    ],
+    "VERIFICATION_FAILED": [
+      "PROOF_ATTEMPT",
+      "FORMALIZATION",
+      "ABANDONED",
+      "BLOCKED"
+    ],
+    "PARTIAL_PROGRESS": [
+      "DECOMPOSED",
+      "SENTINEL_READY",
+      "BLOCKED",
+      "ABANDONED"
+    ],
+    "COLLISION_FOUND": [
+      "KNOWN_RESULT_REDISCOVERED",
+      "ABANDONED",
+      "OPEN_STATUS_UNVERIFIED"
+    ],
+    "KNOWN_RESULT_REDISCOVERED": [
+      "PROVED"
+    ],
+    "BLOCKED": [
+      "OPEN_STATUS_UNVERIFIED",
+      "ABANDONED"
+    ],
+    "FALSIFIED": [
+      "ABANDONED"
+    ],
+    "PROVED": [],
+    "ABANDONED": []
+  }
+}

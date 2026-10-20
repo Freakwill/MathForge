@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "problem_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "enum": [
+        "GO_TO_LITERATURE_AUDIT",
+        "HOLD",
+        "KILL"
+      ]
+    },
+    "area": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exact_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tractability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "literature": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "cheapest_falsification": {
+      "type": "string",
+      "minLength": 1
+    },
+    "likely_verifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "main_barrier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "useful_result": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "candidate_id",
+    "problem_id",
+    "decision",
+    "area",
+    "exact_question",
+    "tractability",
+    "literature",
+    "cheapest_falsification",
+    "likely_verifier",
+    "main_barrier",
+    "useful_result",
+    "decision_reason"
+  ],
+  "additionalProperties": false
+}

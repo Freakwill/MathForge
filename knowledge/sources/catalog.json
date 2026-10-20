@@ -1,0 +1,22 @@
+[
+  {
+    "source_id": "SRC-DEMO",
+    "title": "Synthetic source metadata fixture",
+    "authors": [
+      "Synthetic fixture"
+    ],
+    "url": "https://example.invalid/fixture",
+    "kind": "unsourced",
+    "access": "unavailable",
+    "retrieved_on": "2000-01-01",
+    "publication_year": null,
+    "version": null,
+    "provenance": {
+      "actor": "synthetic-fixture",
+      "recorded_at": "2000-01-01T00:00:00+00:00",
+      "method": "New generated public demonstration instance.",
+      "limitations": "No scientific result or openness evidence."
+    },
+    "status_bindings": {}
+  }
+]

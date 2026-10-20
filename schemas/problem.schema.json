@@ -1,0 +1,1181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "problem_id": {
+      "type": "string",
+      "pattern": "^MF-[0-9]{4}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "field": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "subfields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "canonical_statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "informal_statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "equivalent_formulations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supports": {
+                  "enum": [
+                    "statement",
+                    "open_status",
+                    "known_result",
+                    "motivation",
+                    "conflict"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "locator",
+                "supports",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "statement",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "record_kind": {
+      "enum": [
+        "named_problem",
+        "bounded_question",
+        "calibration_question"
+      ]
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "statement": {
+          "enum": [
+            "verified",
+            "unverified"
+          ]
+        },
+        "open_status": {
+          "enum": [
+            "verified",
+            "unverified"
+          ]
+        },
+        "literature": {
+          "enum": [
+            "needs_literature_audit",
+            "audited"
+          ]
+        },
+        "novelty": {
+          "enum": [
+            "unknown",
+            "known",
+            "evidence_supported"
+          ]
+        }
+      },
+      "required": [
+        "statement",
+        "open_status",
+        "literature",
+        "novelty"
+      ],
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "enum": [
+            "OPEN_STATUS_UNVERIFIED",
+            "VERIFIED_OPEN",
+            "PARTIALLY_SOLVED",
+            "KNOWN_RESULT",
+            "FALSIFIED"
+          ]
+        },
+        "last_verified": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "confidence": {
+          "enum": [
+            "unknown",
+            "source_supported"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "supports": {
+                "enum": [
+                  "statement",
+                  "open_status",
+                  "known_result",
+                  "motivation",
+                  "conflict"
+                ]
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_id",
+              "locator",
+              "supports",
+              "note"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "value",
+        "last_verified",
+        "confidence",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "origin": {
+      "type": "object",
+      "properties": {
+        "first_known_source": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "approximate_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "first_known_source",
+        "approximate_year",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "surveys": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "modern": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "primary",
+        "surveys",
+        "modern"
+      ],
+      "additionalProperties": false
+    },
+    "known_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supports": {
+                  "enum": [
+                    "statement",
+                    "open_status",
+                    "known_result",
+                    "motivation",
+                    "conflict"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "locator",
+                "supports",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "statement",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "partial_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supports": {
+                  "enum": [
+                    "statement",
+                    "open_status",
+                    "known_result",
+                    "motivation",
+                    "conflict"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "locator",
+                "supports",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "statement",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "special_cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supports": {
+                  "enum": [
+                    "statement",
+                    "open_status",
+                    "known_result",
+                    "motivation",
+                    "conflict"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "locator",
+                "supports",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "statement",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "known_counterexamples": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "known_barriers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "dependency_graph": {
+      "type": "object",
+      "properties": {
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "related_problems": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "stronger_questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "weaker_questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "equivalent_questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "prerequisites",
+        "related_problems",
+        "stronger_questions",
+        "weaker_questions",
+        "equivalent_questions"
+      ],
+      "additionalProperties": false
+    },
+    "formalization": {
+      "type": "object",
+      "properties": {
+        "lean_available": {
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        "mathlib_coverage": {
+          "enum": [
+            "audited",
+            "unknown"
+          ]
+        },
+        "existing_formalization": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "missing_components": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "lean_available",
+        "mathlib_coverage",
+        "existing_formalization",
+        "missing_components"
+      ],
+      "additionalProperties": false
+    },
+    "computational_structure": {
+      "type": "object",
+      "properties": {
+        "finite_search_possible": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "yes",
+                "no",
+                "conditional",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "exact_oracle_possible": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "yes",
+                "no",
+                "conditional",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "symbolic_computation_possible": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "yes",
+                "no",
+                "conditional",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "numerical_experiment_possible": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "yes",
+                "no",
+                "conditional",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "synthetic_data_possible": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "yes",
+                "no",
+                "conditional",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "finite_search_possible",
+        "exact_oracle_possible",
+        "symbolic_computation_possible",
+        "numerical_experiment_possible",
+        "synthetic_data_possible"
+      ],
+      "additionalProperties": false
+    },
+    "machine_tractability": {
+      "type": "object",
+      "properties": {
+        "statement_clarity": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "verification_cost": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "counterexample_searchability": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "decomposition_quality": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "formalization_cost": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "literature_density": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "compute_cost": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "human_dependency": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "dependency_depth": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "example_availability": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "geometric_intuition": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "new_definitions": {
+          "type": "object",
+          "properties": {
+            "assessment": {
+              "enum": [
+                "favorable",
+                "mixed",
+                "unfavorable",
+                "unknown"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "assessment",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "overall_notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "statement_clarity",
+        "verification_cost",
+        "counterexample_searchability",
+        "decomposition_quality",
+        "formalization_cost",
+        "literature_density",
+        "compute_cost",
+        "human_dependency",
+        "dependency_depth",
+        "example_availability",
+        "geometric_intuition",
+        "new_definitions",
+        "overall_notes"
+      ],
+      "additionalProperties": false
+    },
+    "research_state": {
+      "enum": [
+        "UNMAPPED",
+        "MAPPED",
+        "OPEN_STATUS_UNVERIFIED",
+        "VERIFIED_OPEN",
+        "PARTIALLY_SOLVED",
+        "COLLISION_FOUND",
+        "DECOMPOSED",
+        "TARGETABLE",
+        "SENTINEL_READY",
+        "SENTINEL_RUNNING",
+        "FALSIFIED",
+        "BLOCKED",
+        "PROOF_ATTEMPT",
+        "FORMALIZATION",
+        "VERIFICATION_FAILED",
+        "PARTIAL_PROGRESS",
+        "PROVED",
+        "KNOWN_RESULT_REDISCOVERED",
+        "ABANDONED"
+      ]
+    },
+    "research_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "enum": [
+              "UNMAPPED",
+              "MAPPED",
+              "OPEN_STATUS_UNVERIFIED",
+              "VERIFIED_OPEN",
+              "PARTIALLY_SOLVED",
+              "COLLISION_FOUND",
+              "DECOMPOSED",
+              "TARGETABLE",
+              "SENTINEL_READY",
+              "SENTINEL_RUNNING",
+              "FALSIFIED",
+              "BLOCKED",
+              "PROOF_ATTEMPT",
+              "FORMALIZATION",
+              "VERIFICATION_FAILED",
+              "PARTIAL_PROGRESS",
+              "PROVED",
+              "KNOWN_RESULT_REDISCOVERED",
+              "ABANDONED"
+            ]
+          },
+          "to": {
+            "enum": [
+              "UNMAPPED",
+              "MAPPED",
+              "OPEN_STATUS_UNVERIFIED",
+              "VERIFIED_OPEN",
+              "PARTIALLY_SOLVED",
+              "COLLISION_FOUND",
+              "DECOMPOSED",
+              "TARGETABLE",
+              "SENTINEL_READY",
+              "SENTINEL_RUNNING",
+              "FALSIFIED",
+              "BLOCKED",
+              "PROOF_ATTEMPT",
+              "FORMALIZATION",
+              "VERIFICATION_FAILED",
+              "PARTIAL_PROGRESS",
+              "PROVED",
+              "KNOWN_RESULT_REDISCOVERED",
+              "ABANDONED"
+            ]
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "locator": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supports": {
+                  "enum": [
+                    "statement",
+                    "open_status",
+                    "known_result",
+                    "motivation",
+                    "conflict"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "locator",
+                "supports",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "from",
+          "to",
+          "at",
+          "actor",
+          "reason",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "negative_knowledge_links": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "actor",
+        "recorded_at",
+        "method",
+        "limitations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "problem_id",
+    "name",
+    "aliases",
+    "field",
+    "subfields",
+    "keywords",
+    "canonical_statement",
+    "informal_statement",
+    "equivalent_formulations",
+    "record_kind",
+    "audit",
+    "status",
+    "origin",
+    "sources",
+    "known_results",
+    "partial_results",
+    "special_cases",
+    "known_counterexamples",
+    "known_barriers",
+    "dependency_graph",
+    "formalization",
+    "computational_structure",
+    "machine_tractability",
+    "research_state",
+    "research_history",
+    "negative_knowledge_links",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "negative_id": {
+      "type": "string",
+      "pattern": "^NEG-[A-Z0-9-]+$"
+    },
+    "kind": {
+      "enum": [
+        "false_conjecture",
+        "failed_proof_strategy",
+        "known_barrier",
+        "literature_collision",
+        "replay_prohibition"
+      ]
+    },
+    "problem_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supports": {
+            "enum": [
+              "statement",
+              "open_status",
+              "known_result",
+              "motivation",
+              "conflict"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "source_id",
+          "locator",
+          "supports",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "actor",
+        "recorded_at",
+        "method",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "negative_id",
+    "kind",
+    "problem_ids",
+    "scope",
+    "reason",
+    "evidence",
+    "provenance",
+    "supersedes",
+    "details"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "false_conjecture"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "details": {
+            "type": "object",
+            "properties": {
+              "conjecture": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_agent": {
+                "type": "string",
+                "minLength": 1
+              },
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "smallest_known_counterexample": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minimality_status": {
+                "enum": [
+                  "verified_in_scope",
+                  "not_established"
+                ]
+              },
+              "verification_procedure": {
+                "type": "string",
+                "minLength": 1
+              },
+              "exact_code_path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "code_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "dependencies": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "failure_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "conjecture",
+              "source_agent",
+              "timestamp",
+              "smallest_known_counterexample",
+              "minimality_status",
+              "verification_procedure",
+              "exact_code_path",
+              "code_sha256",
+              "dependencies",
+              "failure_reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "failed_proof_strategy"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "details": {
+            "type": "object",
+            "properties": {
+              "target_theorem": {
+                "type": "string",
+                "minLength": 1
+              },
+              "strategy": {
+                "type": "string",
+                "minLength": 1
+              },
+              "intermediate_lemmas": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "failure_point": {
+                "type": "string",
+                "minLength": 1
+              },
+              "failure_type": {
+                "enum": [
+                  "logical",
+                  "formal",
+                  "computational",
+                  "literature_collision"
+                ]
+              },
+              "possible_repair": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "replay_prohibition": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "target_theorem",
+              "strategy",
+              "intermediate_lemmas",
+              "failure_point",
+              "failure_type",
+              "possible_repair",
+              "replay_prohibition"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "known_barrier"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "details": {
+            "type": "object",
+            "properties": {
+              "barrier_type": {
+                "enum": [
+                  "undecidability",
+                  "independence",
+                  "np_hard",
+                  "impossibility",
+                  "missing_regularity",
+                  "non_identifiability",
+                  "insufficient_hypothesis",
+                  "false_generalization",
+                  "already_known"
+                ]
+              },
+              "precise_hypotheses": {
+                "type": "string",
+                "minLength": 1
+              },
+              "primary_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "locator": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "supports": {
+                      "enum": [
+                        "statement",
+                        "open_status",
+                        "known_result",
+                        "motivation",
+                        "conflict"
+                      ]
+                    },
+                    "note": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "locator",
+                    "supports",
+                    "note"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "barrier_type",
+              "precise_hypotheses",
+              "primary_evidence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "literature_collision"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "details": {
+            "type": "object",
+            "properties": {
+              "matched_statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "equivalence_argument": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "matched_statement",
+              "source_id",
+              "locator",
+              "equivalence_argument"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "replay_prohibition"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "details": {
+            "type": "object",
+            "properties": {
+              "blocked_actions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "release_condition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mathematical_failure_claim": {
+                "const": false
+              }
+            },
+            "required": [
+              "blocked_actions",
+              "release_condition",
+              "mathematical_failure_claim"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

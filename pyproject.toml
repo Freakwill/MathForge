@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathforge-framework-candidate"
+version = "0.1.0.dev0"
+description = "Private candidate: fail-closed research workflow infrastructure with synthetic examples"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = {text = "LicenseRef-Pending-Owner-Approval"}
+dependencies = ["jsonschema==4.25.1"]
+
+[project.scripts]
+mathforge = "mathforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mathforge = ["assets/*.json", "assets/*.in", "assets/schemas/*.json"]

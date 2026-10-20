@@ -1,0 +1,25 @@
+{
+  "negative_id": "NEG-DEMO-PHASE0",
+  "kind": "replay_prohibition",
+  "problem_ids": [
+    "MF-0000"
+  ],
+  "scope": "Synthetic example; execution is disabled.",
+  "reason": "Infrastructure-only demo.",
+  "evidence": [],
+  "provenance": {
+    "actor": "synthetic-fixture",
+    "recorded_at": "2000-01-01T00:00:00+00:00",
+    "method": "New generated public demonstration instance.",
+    "limitations": "No scientific result or openness evidence."
+  },
+  "supersedes": null,
+  "details": {
+    "blocked_actions": [
+      "research execution",
+      "proof acceptance"
+    ],
+    "release_condition": "A separately reviewed future protocol; never an automatic release.",
+    "mathematical_failure_claim": false
+  }
+}

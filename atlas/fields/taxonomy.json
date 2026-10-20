@@ -1,0 +1,9 @@
+[
+  {
+    "field_id": "demo",
+    "name": "Synthetic infrastructure",
+    "parents": [],
+    "related_fields": [],
+    "scope": "Synthetic validation only."
+  }
+]
