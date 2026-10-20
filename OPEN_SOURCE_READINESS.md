@@ -1,11 +1,9 @@
-# 开源就绪结论
+# Distribution Readiness
 
-本地候选，未公开发布。
+Technical candidate: PASS for the tested Windows/Python target, synthetic audit flow and explicit scoped Lean integration. Private GitHub import, pull request and merge were authorized and completed after successful import CI. This does not authorize public visibility or Releases.
 
-- 技术核心：PASS。隔离 Windows CPython 3.13.9 虚拟环境安装 wheel；29 项测试通过，含真实 Lean 接口的正反检查。
-- 合成最小演示：PASS。结构验证、持久审计队列、导出和重放 Gate 跑通；无科研成果。
-- 敏感边界：候选不继承原 Git 历史，无原研究记录、环境、机器配置或依赖分发物；静态候选检查通过。
-- 许可证：Apache-2.0 仅为候选；当前不授予公开分发权。权属与正式采用需授权主体确认。
-- 发布状态：HOLD。没有公开仓库、推送、Release 或云端 CI 执行。
+All 29 local tests passed with actual Lean synthetic positive/negative checks. Cloud import CI passed with one optional real-Lean test explicitly skipped. Failed historical local attempts remain retained outside this distribution. Private source history, scientific evidence, unannounced results, environments and credentials are excluded.
 
-这份技术验收不构成数学结论、安全认证或法律认证。
+Public distribution: **HOLD**. Imported-code ownership, employment/institution/collaborator rights, third-party attribution and the initial image assets still require responsible review. The existing Apache-2.0 text is preserved, while the candidate notice and package metadata retain pending-owner status. Technical tests do not certify rights, mathematical correctness, novelty or publication readiness.
+
+See [capability boundaries](docs/architecture/CORE_VS_INTERNAL.md), [license recommendation](LICENSE_CANDIDATE.md), [review notice](docs/legal/LICENSE_REVIEW_NOTICE.txt), [candidate baseline](FILE_MANIFEST.json), [initial import mapping](IMPORT_PROVENANCE.json), and [current file hashes](CURRENT_FILE_MANIFEST.json).

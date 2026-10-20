@@ -1,11 +1,9 @@
-# 架构与科学边界
+# Architecture Index
 
-`engine.py` 提取既有框架的通用 Phase 0 schema、引用校验、状态图、追加日志、排他写锁、fsync 和重放检查。移除了所有研究专项验证器及实例注册表。
+The CORE is a synthetic, fail-closed audit framework. The private research node includes separately authorized components which are absent here. An architecture label describes implementation scope, not mathematical acceptance.
 
-`queue.py` 将原执行器的事务、逻辑键去重、持久状态和失败保留机制收敛为审计任务队列。只执行验证和不可覆盖的导出；不保留原研究 target 列表、搜索算法、远程工作节点或自主调度循环。
-
-`certificates.py` 与可信 Inspector 模板提取纯证书语法、目标绑定、内核重检和公理约束。`lean.py` 只暴露 Init 接口，拒绝任意源文件、上下文与导入。`SCOPED_KERNEL_CHECKED` 不意味着自然语言语义正确、原创性清除、整个论文成立或工作流可提升为 PROVED。
-
-`workspace.py` 只生成全新合成数据。示例源为 example.invalid，明确不可用，不充当已发表来源或开放问题证据。未携带原始 atlas、日志、失败结果或证明。
-
-哈希链用于检测修改，并非作者认证或对恶意改写的完整防护。并发与崩溃恢复为本地协议，不宣称分布式恰好一次执行。已领取任务发生崩溃后须显式标记中断，不自动重放。
+- [Full research workflow](architecture/FULL_RESEARCH_WORKFLOW.md)
+- [System modules and data flow](architecture/SYSTEM_ARCHITECTURE.md)
+- [Gates, state transitions and feedback loops](architecture/RESEARCH_LIFECYCLE.md)
+- [CORE versus internal capabilities](architecture/CORE_VS_INTERNAL.md)
+- [Implementation and evidence map](architecture/WORKFLOW_EVIDENCE.md)
