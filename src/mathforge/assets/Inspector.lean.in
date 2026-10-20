@@ -1,0 +1,22 @@
+import Lean
+import @@MODULE@@
+
+open Lean Elab Command
+
+-- This file is trusted verifier code. Candidate proposals cannot add commands here.
+@@EXPECTED@@
+
+run_elab do
+  let mut rows : Array Json := #[]
+  let env ← getEnv
+  -- Audit every declaration introduced by Candidate, including unused helpers.
+  let some candidateIdx := env.header.moduleNames.findIdx? (· == `@@MODULE@@)
+    | throwError "candidate module not loaded"
+  for declName in env.header.moduleData[candidateIdx]!.constNames do
+    let dependencies ← collectAxioms declName
+    for ax in dependencies do
+      unless ax == `propext || ax == `Classical.choice || ax == `Quot.sound do
+        throwError "candidate module contains unapproved axiom: {ax}"
+  @@CHECKS@@
+  liftM (m := TermElabM) <| IO.FS.writeFile @@OUTPUT@@ (Json.compress <| Json.mkObj [
+    ("protocol", toJson "mathforge-kernel-v1"), ("all_candidate_declarations_audited", toJson true), ("targets", Json.arr rows)])

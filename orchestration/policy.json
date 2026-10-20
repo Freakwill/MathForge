@@ -1,0 +1,20 @@
+{
+  "phase": 0,
+  "enabled_roles": [
+    "cartographer",
+    "literature",
+    "critic",
+    "verifier"
+  ],
+  "allowed_targets": [
+    "MAPPED",
+    "OPEN_STATUS_UNVERIFIED",
+    "VERIFIED_OPEN",
+    "COLLISION_FOUND",
+    "BLOCKED",
+    "ABANDONED"
+  ],
+  "open_evidence_max_age_days": 180,
+  "research_execution_enabled": false,
+  "proof_acceptance_enabled": false
+}

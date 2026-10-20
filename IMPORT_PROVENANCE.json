@@ -1,0 +1,417 @@
+{
+  "baseline_files": 58,
+  "baseline_bytes": 205023,
+  "all_baseline_hashes_verified": true,
+  "baseline_git_history_imported": false,
+  "preserved_initialization_commit": "cb19ba01f591f04971482179286c6d43f29e86bb",
+  "existing_license_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+  "manifest_scope": "FILE_MANIFEST.json is the immutable pre-import candidate baseline, not the current repository inventory. README is merged; candidate license notice is relocated. Initialization LICENSE and images are retained.",
+  "mapping": [
+    {
+      "candidate_path": ".github/workflows/ci.yml",
+      "candidate_sha256": "b64ff26f8501abb79ebddc8131d335d4f32c2887676b0d25e1d3bdd76375c3c6",
+      "repository_path": ".github/workflows/ci.yml",
+      "repository_sha256": "b64ff26f8501abb79ebddc8131d335d4f32c2887676b0d25e1d3bdd76375c3c6",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": ".gitignore",
+      "candidate_sha256": "3129b829ffd9624739fa88ca5f988a347c81ef278bf1f8b1f4274e2e6d99ad79",
+      "repository_path": ".gitignore",
+      "repository_sha256": "3129b829ffd9624739fa88ca5f988a347c81ef278bf1f8b1f4274e2e6d99ad79",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "AGENTS.md",
+      "candidate_sha256": "684a26ac54a78ea8368fd04ce2e69e8b1ed0cb7a0f2a689a97d36a9481af5b52",
+      "repository_path": "AGENTS.md",
+      "repository_sha256": "684a26ac54a78ea8368fd04ce2e69e8b1ed0cb7a0f2a689a97d36a9481af5b52",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "DEPENDENCY_INVENTORY.json",
+      "candidate_sha256": "682d91834b3daeb074d913a38cc94f76cd3e91c0dcb734e4fd18e6440d54fe27",
+      "repository_path": "DEPENDENCY_INVENTORY.json",
+      "repository_sha256": "682d91834b3daeb074d913a38cc94f76cd3e91c0dcb734e4fd18e6440d54fe27",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "FILE_MANIFEST.json",
+      "candidate_sha256": "930ea1cf2fd8501885d56781ab5d827f6998180e321ca059f99dc6f009b7bd6f",
+      "repository_path": "FILE_MANIFEST.json",
+      "repository_sha256": "930ea1cf2fd8501885d56781ab5d827f6998180e321ca059f99dc6f009b7bd6f",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "LICENSE",
+      "candidate_sha256": "86eefa53f02fb80883b85446c84c053798fc66e39d18765c3b2cab2eaf9d08a0",
+      "repository_path": "docs/legal/LICENSE_REVIEW_NOTICE.txt",
+      "repository_sha256": "86eefa53f02fb80883b85446c84c053798fc66e39d18765c3b2cab2eaf9d08a0",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "LICENSE_CANDIDATE.md",
+      "candidate_sha256": "42a1d9fad48ffb71eb4f89597a9b22b32528efa462b21daf0683f39c03417eb2",
+      "repository_path": "LICENSE_CANDIDATE.md",
+      "repository_sha256": "42a1d9fad48ffb71eb4f89597a9b22b32528efa462b21daf0683f39c03417eb2",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "OPEN_SOURCE_READINESS.md",
+      "candidate_sha256": "da4402bb0493670c6d38f131f87790f6aeeb1cc2fafe7350c6f8b921b5e95f1e",
+      "repository_path": "OPEN_SOURCE_READINESS.md",
+      "repository_sha256": "da4402bb0493670c6d38f131f87790f6aeeb1cc2fafe7350c6f8b921b5e95f1e",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "README.md",
+      "candidate_sha256": "3f23126032db40cb70fe584e6900bdea3804a647aaa070dc243f996dc3da8ee5",
+      "repository_path": "README.md",
+      "repository_sha256": "4c93debbac4b692b097b0da9b97303a60c3297db1f03276a28d5ac6d29fb1c7c",
+      "byte_identical": false
+    },
+    {
+      "candidate_path": "RESEARCH_STATE.md",
+      "candidate_sha256": "54caa6fe0f277fe4d9db73b872d43afea8d7cad92a58cb204096c89bb4d75124",
+      "repository_path": "RESEARCH_STATE.md",
+      "repository_sha256": "54caa6fe0f277fe4d9db73b872d43afea8d7cad92a58cb204096c89bb4d75124",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "SCIENTIFIC_CONTRACT.md",
+      "candidate_sha256": "d7b07fac4f386d2a09685c8b72ce446b58c043a501635d711b32c2dee5366b8c",
+      "repository_path": "SCIENTIFIC_CONTRACT.md",
+      "repository_sha256": "d7b07fac4f386d2a09685c8b72ce446b58c043a501635d711b32c2dee5366b8c",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "THIRD_PARTY_NOTICES.md",
+      "candidate_sha256": "72169cd53342b74e14f5fb5677010ee9de437bc1fb47cdd7846d3746fc087764",
+      "repository_path": "THIRD_PARTY_NOTICES.md",
+      "repository_sha256": "72169cd53342b74e14f5fb5677010ee9de437bc1fb47cdd7846d3746fc087764",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "atlas/atlas.jsonl",
+      "candidate_sha256": "4cc90c77204ad9dff41cf74fa0afe046495c91ae6e633c2c5836c5edcda7a712",
+      "repository_path": "atlas/atlas.jsonl",
+      "repository_sha256": "4cc90c77204ad9dff41cf74fa0afe046495c91ae6e633c2c5836c5edcda7a712",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "atlas/fields/taxonomy.json",
+      "candidate_sha256": "30cef7aa1e5139ef16597b208afb6341a9898cf22d479773a6296aba10e53c50",
+      "repository_path": "atlas/fields/taxonomy.json",
+      "repository_sha256": "30cef7aa1e5139ef16597b208afb6341a9898cf22d479773a6296aba10e53c50",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "docs/ARCHITECTURE.md",
+      "candidate_sha256": "2eb28054bfe74fc2b6604f8ad3dec762fa82fb48a61b98f900bc5acae6acf4d4",
+      "repository_path": "docs/ARCHITECTURE.md",
+      "repository_sha256": "2eb28054bfe74fc2b6604f8ad3dec762fa82fb48a61b98f900bc5acae6acf4d4",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "docs/INSTALL.md",
+      "candidate_sha256": "bbe2c6d5aa807f1d3e1c69a04a44952497aff45ee76b7e3ab60f760dd7d9dcdd",
+      "repository_path": "docs/INSTALL.md",
+      "repository_sha256": "bbe2c6d5aa807f1d3e1c69a04a44952497aff45ee76b7e3ab60f760dd7d9dcdd",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "examples/block-demo.json",
+      "candidate_sha256": "6c131e08bcbdbbaddb17a294fbc763a0f77980310d633856a39cabab1d0a77f0",
+      "repository_path": "examples/block-demo.json",
+      "repository_sha256": "6c131e08bcbdbbaddb17a294fbc763a0f77980310d633856a39cabab1d0a77f0",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "knowledge/definitions/catalog.json",
+      "candidate_sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "repository_path": "knowledge/definitions/catalog.json",
+      "repository_sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "knowledge/sources/catalog.json",
+      "candidate_sha256": "8c5cd4890cdcb3e0c5e78e4d2fd29bec0321771c77b593d91ad0369676c7e94b",
+      "repository_path": "knowledge/sources/catalog.json",
+      "repository_sha256": "8c5cd4890cdcb3e0c5e78e4d2fd29bec0321771c77b593d91ad0369676c7e94b",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "negative_knowledge/do_not_replay/NEG-DEMO-PHASE0.json",
+      "candidate_sha256": "3ff49bc9356f56fb982a3e9f778ebf9a710805b6c89a2fdc6020145160a8b429",
+      "repository_path": "negative_knowledge/do_not_replay/NEG-DEMO-PHASE0.json",
+      "repository_sha256": "3ff49bc9356f56fb982a3e9f778ebf9a710805b6c89a2fdc6020145160a8b429",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "orchestration/policy.json",
+      "candidate_sha256": "9379b40931b6da5376dc651b5dfbd7b3fdb08d85ffd21e71546ee5e7405675da",
+      "repository_path": "orchestration/policy.json",
+      "repository_sha256": "9379b40931b6da5376dc651b5dfbd7b3fdb08d85ffd21e71546ee5e7405675da",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "orchestration/transitions.json",
+      "candidate_sha256": "cf4383e6f885b72394d66aca69e8765e19e9f507c212227956f25898593688a0",
+      "repository_path": "orchestration/transitions.json",
+      "repository_sha256": "cf4383e6f885b72394d66aca69e8765e19e9f507c212227956f25898593688a0",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "pyproject.toml",
+      "candidate_sha256": "afddfab9b81f3676eb0ca7d917438ee464e93fb497771482c78b444ac0588107",
+      "repository_path": "pyproject.toml",
+      "repository_sha256": "afddfab9b81f3676eb0ca7d917438ee464e93fb497771482c78b444ac0588107",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "requirements-build.lock",
+      "candidate_sha256": "f2bdf7f03cb70d6d3e19e60a2a834ce73dd3ddb662d8452e4692d2db59220a8a",
+      "repository_path": "requirements-build.lock",
+      "repository_sha256": "f2bdf7f03cb70d6d3e19e60a2a834ce73dd3ddb662d8452e4692d2db59220a8a",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "requirements.lock",
+      "candidate_sha256": "7baaa19705253702accb5212c041e2b46bc9d9d38ab320d01f13f96da88545fe",
+      "repository_path": "requirements.lock",
+      "repository_sha256": "7baaa19705253702accb5212c041e2b46bc9d9d38ab320d01f13f96da88545fe",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "research/candidates/shortlist.json",
+      "candidate_sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "repository_path": "research/candidates/shortlist.json",
+      "repository_sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/candidate.schema.json",
+      "candidate_sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd",
+      "repository_path": "schemas/candidate.schema.json",
+      "repository_sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/conjecture.schema.json",
+      "candidate_sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad",
+      "repository_path": "schemas/conjecture.schema.json",
+      "repository_sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/event.schema.json",
+      "candidate_sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b",
+      "repository_path": "schemas/event.schema.json",
+      "repository_sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/field.schema.json",
+      "candidate_sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6",
+      "repository_path": "schemas/field.schema.json",
+      "repository_sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/negative.schema.json",
+      "candidate_sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f",
+      "repository_path": "schemas/negative.schema.json",
+      "repository_sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/problem.schema.json",
+      "candidate_sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf",
+      "repository_path": "schemas/problem.schema.json",
+      "repository_sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/source.schema.json",
+      "candidate_sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5",
+      "repository_path": "schemas/source.schema.json",
+      "repository_sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "schemas/theorem.schema.json",
+      "candidate_sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39",
+      "repository_path": "schemas/theorem.schema.json",
+      "repository_sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "scripts/check_public_tree.py",
+      "candidate_sha256": "4fbc9b1fb9f824496522310d2afa66b59d92560184ee3643894a26a2283a1527",
+      "repository_path": "scripts/check_public_tree.py",
+      "repository_sha256": "4fbc9b1fb9f824496522310d2afa66b59d92560184ee3643894a26a2283a1527",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "scripts/mathforge.py",
+      "candidate_sha256": "f2595a6e16e948f109187fb2673df3f37725cdc59b164ddda4eaa593e83f71f9",
+      "repository_path": "scripts/mathforge.py",
+      "repository_sha256": "f2595a6e16e948f109187fb2673df3f37725cdc59b164ddda4eaa593e83f71f9",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/__init__.py",
+      "candidate_sha256": "0119acf1f5c08f72480dbbbb786a4ea061a37141c1d91c5dfed6840b5a585220",
+      "repository_path": "src/mathforge/__init__.py",
+      "repository_sha256": "0119acf1f5c08f72480dbbbb786a4ea061a37141c1d91c5dfed6840b5a585220",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/__main__.py",
+      "candidate_sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "repository_path": "src/mathforge/__main__.py",
+      "repository_sha256": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/Inspector.lean.in",
+      "candidate_sha256": "b57cd7cd9c984ab85c5230e3d14835e4639b5978245d6c766c3aabbe589f551a",
+      "repository_path": "src/mathforge/assets/Inspector.lean.in",
+      "repository_sha256": "b57cd7cd9c984ab85c5230e3d14835e4639b5978245d6c766c3aabbe589f551a",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/policy.json",
+      "candidate_sha256": "c27583acc2346e033b90f224ba16241cb14b0c0449c51d6524857f8aba1f6802",
+      "repository_path": "src/mathforge/assets/policy.json",
+      "repository_sha256": "c27583acc2346e033b90f224ba16241cb14b0c0449c51d6524857f8aba1f6802",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/candidate.schema.json",
+      "candidate_sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd",
+      "repository_path": "src/mathforge/assets/schemas/candidate.schema.json",
+      "repository_sha256": "70fc03e261e862a87d9443b58672a0e234c734fc118c54548f4beee62f7397dd",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/conjecture.schema.json",
+      "candidate_sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad",
+      "repository_path": "src/mathforge/assets/schemas/conjecture.schema.json",
+      "repository_sha256": "8f9664dc139fa595ca2f667026b5d959cfa79c0f12192570cf0565acfb0dd6ad",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/event.schema.json",
+      "candidate_sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b",
+      "repository_path": "src/mathforge/assets/schemas/event.schema.json",
+      "repository_sha256": "bb14d7e97ffc2d054b44a392f930e02b920efb7117ea5ad30c31d8ab3a87d57b",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/field.schema.json",
+      "candidate_sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6",
+      "repository_path": "src/mathforge/assets/schemas/field.schema.json",
+      "repository_sha256": "2fefcbe396302d29a498e3ae6f8df13237f4758bc1bbaac929bd0d1b1ece9ac6",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/negative.schema.json",
+      "candidate_sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f",
+      "repository_path": "src/mathforge/assets/schemas/negative.schema.json",
+      "repository_sha256": "49d00bc247e5d93da29c317bed3b77a9ab40f145de9bf4e828ff9ac13894e96f",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/problem.schema.json",
+      "candidate_sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf",
+      "repository_path": "src/mathforge/assets/schemas/problem.schema.json",
+      "repository_sha256": "c22cc12ed03a6a89e8b0f9589e4cbdf23d26a8c06235ae3f613345a880849cbf",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/source.schema.json",
+      "candidate_sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5",
+      "repository_path": "src/mathforge/assets/schemas/source.schema.json",
+      "repository_sha256": "cf91f348f13ce1af2c02e49d7a5f9382b0349854fcfd2fcaab48abd020fd15d5",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/schemas/theorem.schema.json",
+      "candidate_sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39",
+      "repository_path": "src/mathforge/assets/schemas/theorem.schema.json",
+      "repository_sha256": "701ca1984ae4e4aa1a4b3473ae1ccd4ef5ef26cd027c9ba7c014798a32a33e39",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/synthetic_seed.json",
+      "candidate_sha256": "38d1e0221e4aa2fced3c1923b7ac94f8c8c8c7559b14b5360595dcc3b45b6b8a",
+      "repository_path": "src/mathforge/assets/synthetic_seed.json",
+      "repository_sha256": "38d1e0221e4aa2fced3c1923b7ac94f8c8c8c7559b14b5360595dcc3b45b6b8a",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/assets/transitions.json",
+      "candidate_sha256": "52cb3b373e9d96508e9cf8e5a752145e617a3145ca88794d6650fc0510dfaeea",
+      "repository_path": "src/mathforge/assets/transitions.json",
+      "repository_sha256": "52cb3b373e9d96508e9cf8e5a752145e617a3145ca88794d6650fc0510dfaeea",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/certificates.py",
+      "candidate_sha256": "4401f149b3b72f2e02e0346c41dfde1d2fe6d4eb6f13c9526f1fbccff6fcee5a",
+      "repository_path": "src/mathforge/certificates.py",
+      "repository_sha256": "4401f149b3b72f2e02e0346c41dfde1d2fe6d4eb6f13c9526f1fbccff6fcee5a",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/cli.py",
+      "candidate_sha256": "8a87385cd01d93efe330fc9d5f6af90c4219c74796abe76b4c3a80ee69e76289",
+      "repository_path": "src/mathforge/cli.py",
+      "repository_sha256": "8a87385cd01d93efe330fc9d5f6af90c4219c74796abe76b4c3a80ee69e76289",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/engine.py",
+      "candidate_sha256": "1620400b5f128350b2763e0136d88efbc2c1d16ae7b2c3d3f2f53fac8cc20394",
+      "repository_path": "src/mathforge/engine.py",
+      "repository_sha256": "1620400b5f128350b2763e0136d88efbc2c1d16ae7b2c3d3f2f53fac8cc20394",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/lean.py",
+      "candidate_sha256": "8404126cd9600f7f03bc6652bb9150f0dc342abe4e773c65e6115b41fe4167fc",
+      "repository_path": "src/mathforge/lean.py",
+      "repository_sha256": "8404126cd9600f7f03bc6652bb9150f0dc342abe4e773c65e6115b41fe4167fc",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/queue.py",
+      "candidate_sha256": "102905e05499eb46d27706a9702258fb9b4c096fb20f10dd770b184818d82fdc",
+      "repository_path": "src/mathforge/queue.py",
+      "repository_sha256": "102905e05499eb46d27706a9702258fb9b4c096fb20f10dd770b184818d82fdc",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/windows_budget.py",
+      "candidate_sha256": "312f5e4f0c5ba40e7a17f28395b78183518ec187cadbae2dacdbd405f29d53aa",
+      "repository_path": "src/mathforge/windows_budget.py",
+      "repository_sha256": "312f5e4f0c5ba40e7a17f28395b78183518ec187cadbae2dacdbd405f29d53aa",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "src/mathforge/workspace.py",
+      "candidate_sha256": "96534861dd6c246bed10b2cbbc132cb3498616a4b66c427deff57bd121286cf0",
+      "repository_path": "src/mathforge/workspace.py",
+      "repository_sha256": "96534861dd6c246bed10b2cbbc132cb3498616a4b66c427deff57bd121286cf0",
+      "byte_identical": true
+    },
+    {
+      "candidate_path": "tests/test_framework.py",
+      "candidate_sha256": "422774858f72b02f118a4923bb7f022c3c12d286fe28269b6b176abc7e199b15",
+      "repository_path": "tests/test_framework.py",
+      "repository_sha256": "422774858f72b02f118a4923bb7f022c3c12d286fe28269b6b176abc7e199b15",
+      "byte_identical": true
+    }
+  ]
+}

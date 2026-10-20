@@ -1,0 +1,72 @@
+{
+  "first_party_license": "LicenseRef-Pending-Owner-Approval",
+  "packages": [
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "observed_artifact_sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "scope": "runtime",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.25.1",
+      "observed_artifact_sha256": "3fba0169e345c7175110351d456342c364814cfcf3b964ba4587f22915230a63",
+      "scope": "runtime",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "observed_artifact_sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+      "scope": "runtime",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "observed_artifact_sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+      "scope": "runtime",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "observed_artifact_sha256": "3e93b2cd69a9830be33e03945cd7cda940a0a8bfcfbff41d6144f0cb0d3d8bd9",
+      "scope": "runtime",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "setuptools",
+      "version": "80.9.0",
+      "observed_artifact_sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922",
+      "scope": "build",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    },
+    {
+      "name": "wheel",
+      "version": "0.45.1",
+      "observed_artifact_sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248",
+      "scope": "build",
+      "primary_license": "MIT",
+      "bundled": false,
+      "notice_review": "build tools may contain independently licensed vendored components; none redistributed"
+    }
+  ],
+  "optional_tools_not_bundled": [
+    "Lean",
+    "Mathlib"
+  ]
+}

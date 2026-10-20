@@ -1,0 +1,8 @@
+{
+  "problem_id": "MF-0000",
+  "from": "OPEN_STATUS_UNVERIFIED",
+  "to": "BLOCKED",
+  "actor": "critic",
+  "reason": "Synthetic audit-only transition.",
+  "evidence": []
+}

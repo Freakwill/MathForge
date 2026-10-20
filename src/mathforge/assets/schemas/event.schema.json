@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "problem_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "from": {
+      "enum": [
+        "UNMAPPED",
+        "MAPPED",
+        "OPEN_STATUS_UNVERIFIED",
+        "VERIFIED_OPEN",
+        "PARTIALLY_SOLVED",
+        "COLLISION_FOUND",
+        "DECOMPOSED",
+        "TARGETABLE",
+        "SENTINEL_READY",
+        "SENTINEL_RUNNING",
+        "FALSIFIED",
+        "BLOCKED",
+        "PROOF_ATTEMPT",
+        "FORMALIZATION",
+        "VERIFICATION_FAILED",
+        "PARTIAL_PROGRESS",
+        "PROVED",
+        "KNOWN_RESULT_REDISCOVERED",
+        "ABANDONED"
+      ]
+    },
+    "to": {
+      "enum": [
+        "UNMAPPED",
+        "MAPPED",
+        "OPEN_STATUS_UNVERIFIED",
+        "VERIFIED_OPEN",
+        "PARTIALLY_SOLVED",
+        "COLLISION_FOUND",
+        "DECOMPOSED",
+        "TARGETABLE",
+        "SENTINEL_READY",
+        "SENTINEL_RUNNING",
+        "FALSIFIED",
+        "BLOCKED",
+        "PROOF_ATTEMPT",
+        "FORMALIZATION",
+        "VERIFICATION_FAILED",
+        "PARTIAL_PROGRESS",
+        "PROVED",
+        "KNOWN_RESULT_REDISCOVERED",
+        "ABANDONED"
+      ]
+    },
+    "at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supports": {
+            "enum": [
+              "statement",
+              "open_status",
+              "known_result",
+              "motivation",
+              "conflict"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "source_id",
+          "locator",
+          "supports",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "previous_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "event_id",
+    "problem_id",
+    "from",
+    "to",
+    "at",
+    "actor",
+    "reason",
+    "evidence",
+    "previous_hash",
+    "hash"
+  ],
+  "additionalProperties": false
+}
