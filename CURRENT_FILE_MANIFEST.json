@@ -1,5 +1,5 @@
 {
-  "scope": "Current distributed files; excludes this manifest itself. Candidate FILE_MANIFEST and initial IMPORT_PROVENANCE remain immutable historical baselines.",
+  "scope": "Distributed file snapshot, excluding this manifest itself. Verify against the accepted commit in the delivery report, not an advancing branch name. Candidate FILE_MANIFEST and initial IMPORT_PROVENANCE remain immutable historical baselines.",
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -58,8 +58,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13809,
-      "sha256": "eb69938d73c4a54da4d65e0822ac03b34d74f1a8f9a11e590998dea4cc20d492"
+      "bytes": 15145,
+      "sha256": "b09bd4ff81704f8862abd6c8988e2d7a9420f1266c749c00a99ab725f49def80"
     },
     {
       "path": "RESEARCH_STATE.md",
@@ -95,6 +95,11 @@
       "path": "docs/INSTALL.md",
       "bytes": 3930,
       "sha256": "d31d203638daad717953a56744794166704692b4cabff2a62d664911cd45928e"
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_CHECKLIST.md",
+      "bytes": 5192,
+      "sha256": "5fbb6e484add9bb383b3a3323ab77434ef3624eefe40791700a91fa5236a7bf2"
     },
     {
       "path": "docs/architecture/CORE_VS_INTERNAL.md",

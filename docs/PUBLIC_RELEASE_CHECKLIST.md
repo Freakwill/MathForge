@@ -5,7 +5,7 @@
 **Snapshot:** 2026-10-20  
 **Current state:** **PRIVATE · PUBLICATION HOLD**
 
-This is a **live checklist** for the imported repository, not a replacement for the preserved local [pre-import audit](../OPEN_SOURCE_READINESS.md). That earlier report describes the state *before* the GitHub import and remains historical evidence.
+This is a **live checklist** for the imported repository, complementing the [current readiness report](../OPEN_SOURCE_READINESS.md). The immutable [candidate baseline](../FILE_MANIFEST.json) and [initial import mapping](../IMPORT_PROVENANCE.json) retain historical provenance; the detailed private pre-import audit is preserved locally and is not distributed here.
 
 ## Scope and evidence
 
